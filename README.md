@@ -1,6 +1,6 @@
 # SteamOS-On-Qemu
 
-👋 Welcome To My SteamOS On QEMU Setup!
+👋 Welcome To My SteamOS On QEMU Setup! On The Kvm Branch!
 
 # Step 1
 
@@ -17,9 +17,3 @@ Run The Startup Script (Change The 4G Number On The -m Alias To The Memory That 
 # Step 4
 
 Your Ready To Go!
-
-# Messages
-
-The SteamOS File Is A Recovery Image. To Install SteamOS You Need To Click Wipe Device & Install SteamOS To Install It
-
-Also There's A Kvm Branch On The Repository. Switch To It If Kvm Supports Your GPU + CPU
