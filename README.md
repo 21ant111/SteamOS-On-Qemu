@@ -17,3 +17,7 @@ Run The Startup Script (Change The 4G Number On The -m Alias To The Memory That 
 # Step 4
 
 Your Ready To Go!
+
+# Messages
+
+The SteamOS File Is A Recovery Image. To Install SteamOS You Need To Click Wipe Device & Install SteamOS To Install It
