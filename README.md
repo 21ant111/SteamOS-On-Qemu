@@ -2,23 +2,23 @@
 
 👋 Welcome To My SteamOS On QEMU Setup!
 
-#Step 1
+# Step 1
 
 Clone The Repository To Termux
 
-#Step 2
+# Step 2
 
 Run The .install File
 
-#Step 3
+# Step 3
 
 Run The Startup Script (Change The 4G Number On The -m Alias To The Memory That Your Phone Can Handle)
 
-#Step 4
+# Step 4
 
 Your Ready To Go!
 
-#Messages
+# Messages
 
 The SteamOS File Is A Recovery Image. To Install SteamOS You Need To Click Wipe Device & Install SteamOS To Install It
 
