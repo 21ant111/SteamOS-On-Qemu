@@ -1,0 +1,27 @@
+echo "Welcome To The SteamOS Installer On QEMU!"
+sleep 3
+echo "This Setup Will Install SteamOS On QEMU"
+sleep 3
+echo " This Setup Will Start In..."
+echo "3"
+sleep 1
+echo "2"
+sleep 1
+echo "1"
+sleep 1
+echo "The Setup Will Start Now"
+
+wget https://steamdeck-images.steamos.cloud/recovery/steamdeck-repair-latest.img.bz2
+
+apt install bzip2
+
+bzip2 -d steamdeck-repair-20250521.10-3.7.7.img.bz2
+
+echo "qemu-system-x86_64   -m 4G -smp 4   -machine q35   -device usb-ehci -device usb-tablet   -device intel-hda -device hda-duplex   -vga virtio -display vnc=:1   -drive if=pflash,format=raw,unit=0,readonly=on,file=$PREFIX/share/qemu/edk2-x86_64-code.fd   -drive if=pflash,format=raw,unit=1,file=OVMF_VARS.fd   -drive if=virtio,file=steamdeck-repair-20250521.10-3.7.7.img,format=raw   -drive if=none,id=drive0,file=steamos.qcow2,format=qcow2   -device nvme,drive=drive0,serial=badbeef -enable-kvm" >> start-steamos-kvm.sh
+
+cp $PREFIX/share/qemu/edk2-i386-vars.fd ./OVMF_VARS.fd
+
+ qemu-img create -f qcow2 steamos.qcow2 64G
+
+echo "Congratulations! You Completed The Setup!"
+echo "The Startup Script Has Been Writed in start-steamos-kvm.sh"
