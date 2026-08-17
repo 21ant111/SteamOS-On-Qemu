@@ -11,6 +11,8 @@ echo "1"
 sleep 1
 echo "The Setup Will Start Now"
 
+apt install wget
+
 wget https://steamdeck-images.steamos.cloud/recovery/steamdeck-repair-latest.img.bz2
 
 apt install bzip2
